@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>startPage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            margin: 0;
+            padding: 10%;
+            background-image: url(./img/backgraund.png);
+            background-repeat: repeat;
+            background-size: auto auto;
+        }
+        .navMenu {
+             margin: 25px;
+            font-size: 22px;
+            font-weight:lighter;
+            font-family: 'Alegreya Sans SC', sans-serif;
+            box-sizing: content-box;
+            text-align: center;
+        }
+        ul {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+        ul li {
+            height: 100%;
+            width: 200px;
+            padding: 0px 0px 0px 0px;
+            display: inline-block;
+            list-style: none;
+            cursor: pointer;
+            position: relative;
+            background-color: #FAB57D;
+            transition: 0.4s;
+        }
+        ul li ul {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+        }
+        ul li ul li ul {
+            top: 0;
+            left: 75%;
+        }
+        ul li:hover {
+         background: #EB643F;
+        }
+        ul li:hover > ul {
+            display: block;     
+        }
+        ul li:hover > ul:hover {
+            opacity: 1;
+        }
+        /* a.subMenu::after {
+            content: '';
+        } */
+        a {
+            text-decoration: none;
+            color: black;
+            text-align: center;
+             font-size: 70%;
+             font-weight: bold;
+        }
+
+  
+    </style>
+</head>
+<body>
+   <div class="navMenu">
+    <ul>
+        <li>
+            <a href="#" class="subMenu">Home Work: lesson 5</a>
+            <ul>
+                <li>
+                    <a href="./HM_lesson_5.1.html">Task 1</a>
+                </li>
+                <li>
+                    <a href="./HM_lesson_5.2.html">Task 2</a>
+                </li>
+            </ul>
+        </li>
+        <!-- <li>
+            <a href="#" class="subMenu">Home Work: lesson 6</a>
+            <ul>
+                <li>
+                    <a href="#">Task 1</a>
+                </li>
+                <li>
+                    <a href="#">Task 2</a>
+                </li>
+            </ul>
+        </li> -->
+    </ul>
+   </div>
+</body>
+</html>
