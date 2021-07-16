@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        /* body {
+            background-image: url(./img/5_vidy_otkorma_svinej-min.png);
+            background-repeat: no-repeat;
+            background-size: 83% auto; 
+            
+            
+        } */
+        @keyframes pig {
+            0% {
+           right: 0%;
+               }
+            50% {
+                   right: 78%;
+               }
+            100% {
+           right: 0%;
+                 }
+     
+        }  
+     .animation {
+        width: auto;
+        height: a;
+        position: absolute;
+        margin-left: 75% ;
+        margin-top: 30%;        
+        animation: pig 5s linear infinite;
+        overflow: hidden;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="animation">
+        <img src="./img/pig-74.gif" alt="pig"/>
+    </div>
+</body>
+</html>
