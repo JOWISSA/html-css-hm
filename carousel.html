@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carousel</title>
+</head>
+<style>
+    .carousel {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        animation: 5s;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-name: slide1;
+        animation-name: slide2;
+        animation-name: slide3;
+
+    }
+    @keyframes slide1 {
+      0%  {
+          
+          left: 0;
+      }
+      33% {
+          
+          left: -100%;
+      }
+    }
+    @keyframes slide2 {
+        35%{
+            
+            left: 0;
+        }   
+        66% {
+            
+            left: -100%;
+        }
+    }
+    @keyframes slide3 {
+        68% {
+           
+            left: 0%;
+        }
+        99% {
+            
+            left: -100%;
+
+        }
+
+    }
+    
+
+</style>
+<body>
+    <div class="carousel">
+        <div class="slide1"> 
+            <img src="./img/slide1.jpg">
+        </div>
+        <div class="slide2">
+            <img src="./img/slide2.jpg">
+        </div>
+        <div class="slide3"> 
+            <img src="./img/slide3.jpg">
+        </div>
+    </div>
+</body>  
+</html>
